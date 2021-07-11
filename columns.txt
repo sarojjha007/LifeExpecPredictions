@@ -1,0 +1,12 @@
+Adult Mortality	
+Income composition of resources	
+HIV/AIDS	
+BMI	
+thinness-5-9-years	
+percentage expenditure	
+thinness-1-19-years	
+Polio	
+GDP	
+under-five deaths	
+Schooling	
+Diphtheria

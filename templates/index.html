@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+		
+            <h2>Predictive analysis for Life Expectancy For a particular country</h2>
+			
+            <h3>Adult Mortality</h3><input id="first" name="adult_mor" type="number ">
+            <h3>Income composition of resources</h3><br><input id="second" name="income" required="required">
+            <h3>HIV/AIDS- Deaths per 1000 live births HIV/AIDS (0-4 years)</h3><input id="third" name="hiv" required="required">
+            <h3>BMI-Average Body Mass Index of entire population </h3><br><input id="fourth" name="bmi" required="required">
+            <h3>Percentage expenditure - Expenditure on health as a percentage of Gross Domestic Product per capita '(%)'</h3><input id="fifth" name="per_exp" required="required">
+			<h3>Thinness 5-9 years- Prevalence of thinness among children for Age 5 to 9'(%)'</h3><input id="sixth" name="thinness5_9" required="required">
+			<h3>GDP- Gross Domestic Product per capita in USD</h3><input id="seventh" name="gdp" required="required">
+			<h3>Schooling- Number of years of Schooling years</h3><input id="eigth" name="school" required="required">
+			<h3>Diphtheria-Diphtheria tetanus toxoid and pertussis (DTP3) immunization coverage among 1-year-olds (%)</h3><input id="ninth" name="dipth" required="required">
+			<h3>Polio-Polio immunization coverage among 1-year-olds % </h3><input id="tenth" name="polio" required="required">
+			<h3>Under-five deaths-Number of under-five deaths per 1000</h3><input id="eleventh" name="under_5" required="required">
+			<h3>Thinness 1-19 years-Prevalence of thinness among children and adolescents for Age 10 to 19 in percentage </h3><input id="twelve" name="thinness1_19" required="required">
+			
+        
+            <br><br><button id="sub" type="submit ">Calculate the Life Expectancy</button>
+            <br>
+			
+        </form>
+
+       <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
